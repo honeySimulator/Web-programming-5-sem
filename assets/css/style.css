@@ -251,6 +251,25 @@ tr:nth-child(odd) td {
     background:#EBEBEB;
 }
 
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+nav li:hover {
+    text-decoration: underline;
+}
+
+.item.active a {
+    color: #ff0000;
+}
+
 @media (max-width: 700px) {
     .invisible-on-mobile {
         display: none;
