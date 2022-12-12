@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Сайт фото-портфолио для web-программирования ">
+  <meta name="keywords" content="сайт, фото, портфолио">
+  <title> Сайт - портфолио </title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/gallery.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/timeLoader.js"></script>
+</head>
+<body>
+<header>
+  <div style="text-align: center">
+    <h1>Сайт - портфолио</h1>
+    <p>Loading time: <span id="loading"></span></p>
+  </div>
+</header>
+<main>
+  <div class="container">
+    <nav>
+      <ul>
+        <li class="item">
+          <a href="index.html">page1</a>
+        </li>
+        <li class="item">
+          <a href="page.html">page2</a>
+        </li>
+        <li class="item">
+          <a href="gallery.html">gallery</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="container">
+    <h3 class="gallery-title">Галерея</h3>
+    <div class="preloader"></div>
+    <div class="error">Ошибка получения данных</div>
+    <div class="pages-nav">
+      <button class="previous-button"><</button>
+      <div class="page-number">1</div>
+      <button class="next-button">></button>
+    </div>
+    <ul class="gallery-ul"></ul>
+  </div>
+</main>
+<footer>
+  <p>Inst: @olgxvsy</p>
+</footer>
+
+<script src="assets/js/gallery.js"></script>
+</body>
+</html>
