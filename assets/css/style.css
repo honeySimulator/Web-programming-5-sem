@@ -5,6 +5,10 @@
     border: none;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 *,
 *::before,
 *::after {
@@ -280,11 +284,13 @@ nav li:hover {
 }
 
 /*position absolute*/
-footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-}
+/*footer {*/
+/*    position: fixed;*/
+/*    bottom: 0;*/
+/*    right: 0;*/
+/*}*/
+
+
 
 .container {
     padding: 0 15px;
@@ -352,6 +358,50 @@ footer {
 }
 .done {
     text-decoration:line-through;
+}
+
+.flexy {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.flexy-col {
+    margin: 15px;
+    width: 50%;
+}
+
+/* Swiper */
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #ffffff;
+
+    /* Центрирование для разных браузеров */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+button {
+    background: black;
+    color: white;
+    margin-top: 30px;
 }
 
 @media (min-width: 576px) {
